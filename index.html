@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spelling Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section id="start-screen" class="screen active">
+      <h1>Spelling Game</h1>
+      <p class="subtitle">Read the clue, then spell the answer.</p>
+
+      <div class="choice-group" aria-label="Choose number of questions">
+        <button class="choice selected" data-count="10">10 Questions</button>
+        <button class="choice" data-count="20">20 Questions</button>
+      </div>
+
+      <button id="start-button" class="primary">Start Game</button>
+    </section>
+
+    <section id="game-screen" class="screen">
+      <div class="top-row">
+        <span id="progress">1 / 10</span>
+        <span id="score">Score: 0</span>
+      </div>
+
+      <div class="card">
+        <p class="label">Clue</p>
+        <h2 id="clue"></h2>
+
+        <form id="answer-form">
+          <label for="answer">Spell the word</label>
+          <input
+            id="answer"
+            name="answer"
+            type="text"
+            autocomplete="off"
+            autocapitalize="none"
+            spellcheck="false"
+            inputmode="text"
+          />
+          <button type="submit" class="primary">Submit</button>
+        </form>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="results-screen" class="screen">
+      <h1>Great work!</h1>
+      <p id="final-score" class="final-score"></p>
+
+      <div class="gauge-wrap" aria-label="Game performance">
+        <div class="gauge">
+          <div id="gauge-fill" class="gauge-fill"></div>
+        </div>
+        <div class="gauge-labels" aria-hidden="true">
+          <span>Keep practicing</span>
+          <span>Excellent!</span>
+        </div>
+        <p id="gauge-message" class="gauge-message"></p>
+      </div>
+
+      <button id="view-answers" class="secondary" type="button" aria-expanded="false">
+        View Answers
+      </button>
+
+      <div id="answers-panel" class="answers-panel" hidden>
+        <div id="results-list" class="results-list"></div>
+      </div>
+
+      <button id="play-again" class="primary">Play Again</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
