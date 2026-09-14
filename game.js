@@ -1,170 +1,49 @@
 const wordBank = [
-  {
-    "clue": "A popular pet that purrs",
-    "answer": "cat"
-  },
-  {
-    "clue": "I have leaves and make up forests",
-    "answer": "tree"
-  },
-  {
-    "clue": "You wear me on your foot",
-    "answer": "shoe"
-  },
-  {
-    "clue": "I shine in the sky during the day",
-    "answer": "sun"
-  },
-  {
-    "clue": "You use me to eat soup",
-    "answer": "spoon"
-  },
-  {
-    "clue": "I say quack",
-    "answer": "duck"
-  },
-  {
-    "clue": "I am a home for people",
-    "answer": "house"
-  },
-  {
-    "clue": "I swim and live in water",
-    "answer": "fish"
-  },
-  {
-    "clue": "You sit on me",
-    "answer": "chair"
-  },
-  {
-    "clue": "I have pages and you read me",
-    "answer": "book"
-  },
-  {
-    "clue": "I bark and wag my tail",
-    "answer": "dog"
-  },
-  {
-    "clue": "I fly in the sky and have feathers",
-    "answer": "bird"
-  },
-  {
-    "clue": "I am round and you can throw me",
-    "answer": "ball"
-  },
-  {
-    "clue": "I carry people on roads",
-    "answer": "car"
-  },
-  {
-    "clue": "I am cold, white, and fall in winter",
-    "answer": "snow"
-  },
-  {
-    "clue": "I come from clouds and make things wet",
-    "answer": "rain"
-  },
-  {
-    "clue": "You wear me when it is cold",
-    "answer": "coat"
-  },
-  {
-    "clue": "I tell you what time it is",
-    "answer": "clock"
-  },
-  {
-    "clue": "I grow in gardens and can smell nice",
-    "answer": "flower"
-  },
-  {
-    "clue": "I am green and can hop",
-    "answer": "frog"
-  },
-  {
-    "clue": "I am a large animal you can ride",
-    "answer": "horse"
-  },
-  {
-    "clue": "I am small, furry, and like cheese",
-    "answer": "mouse"
-  },
-  {
-    "clue": "I can fly people through the sky",
-    "answer": "plane"
-  },
-  {
-    "clue": "I have long ears and I hop",
-    "answer": "rabbit"
-  },
-  {
-    "clue": "I am a small stone",
-    "answer": "rock"
-  },
-  {
-    "clue": "I am long, have no legs, and slither",
-    "answer": "snake"
-  },
-  {
-    "clue": "I shine in the sky at night",
-    "answer": "moon"
-  },
-  {
-    "clue": "I sparkle in the night sky",
-    "answer": "star"
-  },
-  {
-    "clue": "I can carry people on tracks",
-    "answer": "train"
-  },
-  {
-    "clue": "I am a large road vehicle that carries things",
-    "answer": "truck"
-  },
-  {
-    "clue": "I grow on a tree and can be red or green",
-    "answer": "apple"
-  },
-  {
-    "clue": "I am baked and often eaten on birthdays",
-    "answer": "cake"
-  },
-  {
-    "clue": "I live on a farm and say moo",
-    "answer": "cow"
-  },
-  {
-    "clue": "You open me to enter a room",
-    "answer": "door"
-  },
-  {
-    "clue": "I float on water and carry people",
-    "answer": "boat"
-  },
-  {
-    "clue": "I fly on a string in the wind",
-    "answer": "kite"
-  },
-  {
-    "clue": "I grow on branches and can fall in autumn",
-    "answer": "leaf"
-  },
-  {
-    "clue": "You wear me on your head",
-    "answer": "hat"
-  },
-  {
-    "clue": "You sleep in me at night",
-    "answer": "bed"
-  },
-  {
-    "clue": "You drink water from me",
-    "answer": "cup"
-  }
+  { clue: "A pet that says meow and purrs", answer: "cat" },
+  { clue: "A tall plant with a trunk, branches, and leaves", answer: "tree" },
+  { clue: "You wear this on your foot when you go outside", answer: "shoe" },
+  { clue: "The bright star we see in the sky during the day", answer: "sun" },
+  { clue: "You use this to eat soup or cereal", answer: "spoon" },
+  { clue: "A bird that swims and says quack", answer: "duck" },
+  { clue: "A building where a family can live", answer: "house" },
+  { clue: "An animal that lives in water and has fins", answer: "fish" },
+  { clue: "A piece of furniture made for one person to sit on", answer: "chair" },
+  { clue: "Something with pages that you read", answer: "book" },
+  { clue: "A pet that barks and wags its tail", answer: "dog" },
+  { clue: "An animal with feathers, wings, and a beak", answer: "bird" },
+  { clue: "A round toy you can throw, catch, or kick", answer: "ball" },
+  { clue: "A vehicle with four wheels that drives on roads", answer: "car" },
+  { clue: "Soft white flakes that fall from the sky in winter", answer: "snow" },
+  { clue: "Drops of water that fall from clouds", answer: "rain" },
+  { clue: "Clothing you wear over your clothes to stay warm", answer: "coat" },
+  { clue: "Something that tells you what time it is", answer: "clock" },
+  { clue: "The colourful part of a plant that can smell nice", answer: "flower" },
+  { clue: "A small animal that hops and says ribbit", answer: "frog" },
+  { clue: "A large four-legged animal that people can ride", answer: "horse" },
+  { clue: "A very small animal with a long tail that squeaks", answer: "mouse" },
+  { clue: "A vehicle with wings that carries people through the sky", answer: "plane" },
+  { clue: "An animal with long ears that hops", answer: "rabbit" },
+  { clue: "A hard piece of stone you might find on the ground", answer: "rock" },
+  { clue: "A long animal with no legs that slithers", answer: "snake" },
+  { clue: "The large round object that travels around Earth", answer: "moon" },
+  { clue: "One of the tiny points of light you can see in the night sky", answer: "star" },
+  { clue: "A vehicle that travels on railway tracks", answer: "train" },
+  { clue: "A large road vehicle used to carry heavy things", answer: "truck" },
+  { clue: "A round fruit that can be red, green, or yellow", answer: "apple" },
+  { clue: "A sweet baked food often eaten at birthdays", answer: "cake" },
+  { clue: "A farm animal that says moo and gives milk", answer: "cow" },
+  { clue: "You open this to enter or leave a room", answer: "door" },
+  { clue: "A vehicle that carries people across water", answer: "boat" },
+  { clue: "A toy on a string that flies in the wind", answer: "kite" },
+  { clue: "A flat green part that grows on a plant or tree", answer: "leaf" },
+  { clue: "Something you wear on your head", answer: "hat" },
+  { clue: "A piece of furniture you sleep in", answer: "bed" },
+  { clue: "A small container you drink from", answer: "cup" }
 ];
 
 const startScreen = document.getElementById("start-screen");
 const gameScreen = document.getElementById("game-screen");
 const resultsScreen = document.getElementById("results-screen");
-
 const countButtons = document.querySelectorAll(".choice");
 const startButton = document.getElementById("start-button");
 const answerForm = document.getElementById("answer-form");
@@ -258,7 +137,6 @@ function checkAnswer(event) {
 
   const question = questions[currentIndex];
   const correct = typed === question.answer.toLowerCase();
-
   if (correct) {
     const points = attempt === 1 ? 2 : 1;
     score += points;
@@ -317,7 +195,6 @@ function showResults() {
 
   const maxScore = questions.length * 2;
   const percentage = Math.round((score / maxScore) * 100);
-
   finalScoreEl.textContent = `${score} / ${maxScore} points (${percentage}%)`;
 
   gaugeFillEl.style.width = "0%";
@@ -340,7 +217,6 @@ function showResults() {
   answersPanel.hidden = true;
   viewAnswersButton.textContent = "View Answers";
   viewAnswersButton.setAttribute("aria-expanded", "false");
-
   resultsListEl.innerHTML = "";
 
   results.forEach((result) => {
@@ -356,7 +232,6 @@ function showResults() {
     clue.textContent = result.clue;
 
     details.append(word, clue);
-
     const points = document.createElement("div");
     points.className = "result-points";
     points.textContent = `${result.points} pt${result.points === 1 ? "" : "s"}`;
