@@ -50,15 +50,15 @@ const themes = {
     name: "Minecraft",
     description: "Minecraft mobs, blocks, tools, and exploring",
     questions: [
-      { clue: "The Minecraft world is made from cube-shaped pieces called these", answer: "block" },
+      { clue: "The Minecraft world is made of cubes called", answer: "blocks" },
       { clue: "A green hostile mob that sneaks up and explodes", answer: "creeper" },
       { clue: "A hostile mob that looks like a walking dead person", answer: "zombie" },
       { clue: "A hostile mob made of bones that shoots arrows", answer: "skeleton" },
       { clue: "An eight-legged mob that can climb walls", answer: "spider" },
       { clue: "You place this to make light inside a dark cave", answer: "torch" },
       { clue: "The tool you use to mine stone and ores", answer: "pickaxe" },
-      { clue: "A weapon with a blade used for fighting mobs", answer: "sword" },
-      { clue: "A valuable blue gem used to make strong tools and armour", answer: "diamond" },
+      { clue: "A weapon with a long blade used for fighting mobs", answer: "sword" },
+      { clue: "A rare blue gem used to make strong tools and armour", answer: "diamond" },
       { clue: "A box used to store your items", answer: "chest" },
       { clue: "You sleep in this to skip the night and set your respawn point", answer: "bed" },
       { clue: "A place underground where you often find stone and ores", answer: "cave" },
@@ -70,6 +70,15 @@ const themes = {
       { clue: "A farm animal that gives leather and beef", answer: "cow" },
       { clue: "An animal that gives wool when you use shears on it", answer: "sheep" },
       { clue: "A tame animal that can follow you and help fight enemies", answer: "wolf" }
+      { clue: "A tall black mob that can teleport and gets angry if you look at its face", answer: "enderman" },
+      { clue: "A squishy green monster that hops around", answer: "slime" },
+      { clue: "A tool used to chop wood faster", answer: "axe" },
+      { clue: "A tool used to dig dirt, sand, and gravel faster", answer: "shovel" },
+      { clue: "A place made of obsidian that lets you travel to the Nether", answer: "portal" },
+      { clue: "A red dimension filled with lava, piglins, and dangerous mobs", answer: "nether" },
+      { clue: "A flying hostile mob in the Nether that shoots fireballs", answer: "ghast" },
+      { clue: "A block used to cook food and smelt ores", answer: "furnace" },
+      { clue: "A red powder used to build simple machines and circuits", answer: "redstone" },
     ]
   }
 };
