@@ -1,27 +1,17 @@
 # SpellingGame
 
-A simple spelling practice game for a child.
+A simple mobile spelling game hosted with GitHub Pages.
 
-## How it works
+## Themes
 
-1. Choose 10 or 20 questions.
-2. Read the clue.
-3. Type the answer.
-4. A correct first answer earns 2 points.
-5. A correct second answer earns 1 point.
-6. After two wrong attempts, the correct word is shown.
-7. At the end, the game shows the total score and a question-by-question breakdown.
+- Normal
+- Minecraft
 
-## Run locally
+## Architecture
 
-Open `index.html` in a browser.
+- `game.js` = game engine and scoring logic
+- `themes.js` = theme names, descriptions, and question banks
+- `index.html` = page structure
+- `style.css` = appearance
 
-## Host with GitHub Pages
-
-1. Add these files to the root of your `SpellingGame` repository.
-2. In GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select your main branch and `/ (root)`.
-5. Save.
-
-GitHub will provide the URL for the game.
+To add another theme, add another object to `themes.js`. The dropdown is built automatically from the themes in that file.
