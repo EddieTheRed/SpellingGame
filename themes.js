@@ -78,7 +78,7 @@ const themes = {
       { clue: "A red dimension filled with lava, piglins, and dangerous mobs", answer: "nether" },
       { clue: "A flying hostile mob in the Nether that shoots fireballs", answer: "ghast" },
       { clue: "A block used to cook food and smelt ores", answer: "furnace" },
-      { clue: "A red powder used to build simple machines and circuits", answer: "redstone" },
+      { clue: "A red powder used to build simple machines and circuits", answer: "redstone" }
     ]
   }
 };
