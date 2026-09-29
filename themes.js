@@ -69,7 +69,7 @@ const themes = {
       { clue: "A pink farm animal that can be ridden with the right equipment", answer: "pig" },
       { clue: "A farm animal that gives leather and beef", answer: "cow" },
       { clue: "An animal that gives wool when you use shears on it", answer: "sheep" },
-      { clue: "A tame animal that can follow you and help fight enemies", answer: "wolf" }
+      { clue: "A tame animal that can follow you and help fight enemies", answer: "wolf" },
       { clue: "A tall black mob that can teleport and gets angry if you look at its face", answer: "enderman" },
       { clue: "A squishy green monster that hops around", answer: "slime" },
       { clue: "A tool used to chop wood faster", answer: "axe" },
